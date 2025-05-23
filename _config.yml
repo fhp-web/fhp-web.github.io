@@ -1,13 +1,17 @@
+title: FHP
+email: friendsofhagbournepool@gmail.com
+description: Friends of Hagbourne Pool
+
 lis: false
 safe: true
-source: /
 incremental: false
-highlighter: rouge
-gist:
-  noscript: false
-kramdown:
-  math_engine: mathjax
-  syntax_highlighter: rouge
+# highlighter: rouge
+# gist:
+#   noscript: false
+# kramdown:
+#   math_engine: mathjax
+#   syntax_highlighter: rouge
+
 defaults:
   -
     scope:
