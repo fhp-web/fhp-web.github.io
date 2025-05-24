@@ -8,10 +8,28 @@
     <title>{{ site.title }} - {{ page.title }}</title>
     <link rel="shortcut icon" type="image/x-icon" href="{{ 'favicon.ico' | relative_url }}"/>
     <link rel="stylesheet" href="{{ 'assets/css/styles.css' | relative_url }}"/>
+    <script type="text/javascript" src="{{ 'assets/js/site.js' | relative_url }}"></script>
   </head>
   <body>
     <div class="container">
-      <nav class="navbar" role="navigation" aria-label="main navigation"></nav>
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="/"><img src="{{ 'assets/img/fhp-logo.jpg' | relative_url }}"/></a>
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="mainNavBar">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        <div id="mainNavBar" class="navbar-menu">
+          <div class="navbar-start">
+          </div>
+          <div class="navbar-end">
+            <a class="navbar-item" href="{{ 'contact' | relative_url }}">Contact Us</a>
+          </div>
+        </div>
+      </nav>
       <main role="main" class="container">
         {{ content }}
       </main>
